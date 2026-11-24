@@ -1,12 +1,37 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>admin dashboard</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-white text-slate-900 antialiased">
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-100 text-slate-900 antialiased">
+    <div class="min-h-dvh lg:flex">
+      <header class="bg-slate-900 text-slate-300 lg:sticky lg:top-0 lg:h-dvh lg:w-64 lg:shrink-0">
+        <div class="flex items-center justify-between px-5 py-4 lg:block">
+          <a href="" class="flex items-center gap-2 font-bold text-white"
+            ><span class="grid size-8 place-items-center rounded-lg bg-indigo-500">A</span>Admin</a
+          >
+          <details class="relative lg:hidden">
+            <summary class="cursor-pointer list-none rounded-md px-3 py-1.5 text-sm ring-1 ring-slate-600">
+              Menu
+            </summary>
+            <nav class="absolute right-0 z-20 pt-2 w-48 space-y-1 rounded-xl bg-slate-800 p-2 shadow-xl">
+              <a href="" class="block rounded-md hover:bg-slate-700 px-3 py-2 text-white">Overview</a>
+              <a href="" class="block rounded-md hover:bg-slate-700 px-3 py-2">Orders</a>
+              <a href="" class="block rounded-md hover:bg-slate-700 px-3 py-2">Customers</a>
+              <a href="" class="block rounded-md hover:bg-slate-700 px-3 py-2">Settings</a>
+            </nav>
+          </details>
+        </div>
+        <nav class="hidden space-y-1 px-3 lg:block">
+          <a href="" data-active class="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-slate-800 data-active:bg-slate-800 data-active:text-white">📊 Overview</a>
+          <a href="" class="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-slate-800">🧾 Orders <span class="ms-auto rounded-full bg-indigo-500 px-2 text-xs font-medium text-white">12</span></a>
+          <a href="" class="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-slate-800">👥 Customers</a>
+          <a href="" class="flex items-center gap-3 rounded-lg px-3 py-2 hover:bg-slate-800">⚙️ Settings</a>
+        </nav>
+      </header>
+    </div>
+  </body>
 </html>
